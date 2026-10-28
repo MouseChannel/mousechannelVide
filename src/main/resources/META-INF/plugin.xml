@@ -1,0 +1,16 @@
+<idea-plugin>
+    <id>dev.neovidecaret</id>
+    <name>mousechannelVide</name>
+    <vendor>mousechannel</vendor>
+    <description><![CDATA[Neovide-inspired elastic cursor animation with bounded repaint regions and idle-stop scheduling.]]></description>
+    <depends>com.intellij.modules.platform</depends>
+    <applicationListeners>
+        <listener class="dev.neovidecaret.TrailPluginListener"
+                  topic="com.intellij.ide.plugins.DynamicPluginListener"/>
+    </applicationListeners>
+    <extensions defaultExtensionNs="com.intellij">
+        <editorFactoryListener implementation="dev.neovidecaret.TrailEditorListener"/>
+        <applicationConfigurable parentId="editor" id="dev.neovidecaret.settings"
+                                 displayName="mousechannelVide" instance="dev.neovidecaret.TrailConfigurable"/>
+    </extensions>
+</idea-plugin>
