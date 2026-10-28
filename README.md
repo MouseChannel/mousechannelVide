@@ -2,6 +2,8 @@
 
 Author and organization: mousechannel.
 
+[Install from JetBrains Marketplace](https://plugins.jetbrains.com/plugin/35566-mousechannelvide?noRedirect=true)
+
 A Kotlin IntelliJ Platform plugin with Neovide-inspired elastic cursor movement.
 Four independently damped corners stretch into a continuous polygon during motion,
 with a narrowed trailing edge that returns to full size as the cursor arrives.
